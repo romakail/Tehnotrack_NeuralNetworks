@@ -1,0 +1,13 @@
+import pandas as pd
+import seaborn as sns
+import numpy as np
+import matplotlib.pylab as plt
+import math
+
+np.random.seed(102)
+
+def measure(delta):
+    return 3.14 * delta + np.random.normal(scale=5)
+d = np.linspace(1,10, num=50)
+f = np.vectorize(measure)(d)
+plt.plot(d, f, 'o')
