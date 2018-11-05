@@ -1,0 +1,4 @@
+trainData
+homework_4.train.npy
+homework_4_no_classes.test.npy
+sample_submission.csv
